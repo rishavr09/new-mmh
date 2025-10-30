@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV/GL Debug Viewer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #000000;
+        font-family: 'Orbitron', sans-serif;
+        overflow-x: hidden;
+      }
+      .neon-glow {
+        /* Reduced blur for sharper text and a more subtle glow */
+        text-shadow: 0 0 5px currentColor;
+      }
+      /* Custom styles for range input */
+      input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        background: transparent;
+        cursor: pointer;
+      }
+      /* Webkit (Chrome, Safari) */
+      input[type="range"]::-webkit-slider-runnable-track {
+        background: #1a1a1a;
+        height: 0.25rem;
+        border-radius: 1rem;
+        border: 1px solid #0891b2;
+      }
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        margin-top: -6px; /* Position thumb correctly */
+        background-color: #22d3ee;
+        height: 1.25rem;
+        width: 0.75rem;
+        border-radius: 0.25rem;
+        box-shadow: 0 0 10px #22d3ee;
+      }
+      /* Firefox */
+      input[type="range"]::-moz-range-track {
+        background: #1a1a1a;
+        height: 0.25rem;
+        border-radius: 1rem;
+        border: 1px solid #0891b2;
+      }
+      input[type="range"]::-moz-range-thumb {
+        border: none;
+        border-radius: 0.25rem;
+        background-color: #22d3ee;
+        height: 1.25rem;
+        width: 0.75rem;
+        box-shadow: 0 0 10px #22d3ee;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "Android CV/GL Debug Viewer",
+  "description": "A web-based viewer to display and debug processed camera frames from a native Android application, simulating real-time data feeds with statistics.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
